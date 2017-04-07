@@ -3,11 +3,10 @@
 <ul class="list-unstyled">
   <% @cocktail.doses.each do |dose| %>
     <li>
+      <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete do %>
+        <i class="fa fa-minus-circle btn-delete" aria-hidden="true"></i>
+      <% end %>
       <%= dose.description %> (<%= dose.ingredient.name %>)
-      <%= link_to "Delete dose", cocktail_dose_path(@cocktail, dose),
-      method: :delete,
-      data: { confirm: "Are you sure?" },
-      class: "btn btn-danger btn-xs" %>
     </li>
   <% end %>
 </ul>
@@ -19,7 +18,7 @@
       <li><%= message %></li>
     <% end %>
   <% end %>
-  <%= f.input :description %>
+  <%= f.input :description, placeholder: "6oz" %>
   <%= f.association :ingredient, collection: Ingredient.all %>
   <%= f.submit 'Create', class: "btn btn-primary" %>
 <% end %>
