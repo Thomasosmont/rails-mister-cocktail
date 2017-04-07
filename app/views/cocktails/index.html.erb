@@ -2,12 +2,11 @@
   <h1 class="text-center">All our cocktails</h1>
   <div class="container">
     <div class="row">
-      <% @cocktails.each_with_index do |cocktail, index| %>
+      <% @cocktails.each_with_index do |cocktail| %>
         <div class="col-xs-12 col-sm-4">
-          <%= render "card", cocktail: cocktail, i: index %>
+          <%= render "card", cocktail: cocktail %>
         </div>
       <% end %>
     </div>
   </div>
 </div>
-

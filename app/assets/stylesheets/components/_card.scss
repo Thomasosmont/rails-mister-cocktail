@@ -1,11 +1,13 @@
 .card {
-  height: 175px;
+  height: 250px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-size: cover !important;
   color: white;
   position: relative;
   margin: 20px;
-  opacity: 0.8;
+  opacity: 0.9;
+  &:hover {
+    opacity: 0.6;
+  }
 }
 .card-user {
   position: absolute;
@@ -16,7 +18,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 10px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 .card-description {

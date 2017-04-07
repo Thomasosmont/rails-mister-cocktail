@@ -1,26 +1,33 @@
-<h1>Create your new cocktail</h1>
+<div class="container-create text-center">
+  <h1>Create your new cocktail</h1>
 
-<ul class="list-unstyled">
-  <% @cocktail.doses.each do |dose| %>
-    <li>
-      <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete do %>
-        <i class="fa fa-minus-circle btn-delete" aria-hidden="true"></i>
-      <% end %>
-      <%= dose.description %> (<%= dose.ingredient.name %>)
-    </li>
-  <% end %>
-</ul>
-
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-
-  <% if @dose.errors.any? %>
-    <% @dose.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
+  <ul class="list-unstyled">
+    <% @cocktail.doses.each do |dose| %>
+      <li>
+        <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete do %>
+          <i class="fa fa-minus-circle btn-delete" aria-hidden="true"></i>
+        <% end %>
+        <%= dose.description %> (<%= dose.ingredient.name %>)
+      </li>
     <% end %>
-  <% end %>
-  <%= f.input :description, placeholder: "6oz" %>
-  <%= f.association :ingredient, collection: Ingredient.all %>
-  <%= f.submit 'Create', class: "btn btn-primary" %>
-<% end %>
+  </ul>
 
-<%= link_to "Go back to the list", cocktails_path %>
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+
+    <% if @dose.errors.any? %>
+      <% @dose.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    <% end %>
+    <%= f.input :description, placeholder: "6oz" %>
+    <%= f.association :ingredient, collection: Ingredient.all %>
+    <%= f.submit 'Create', class: "btn btn-primary" %>
+  <% end %>
+</div>
+<div class="banner-footer" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_url("cocktail_footer.jpg")%>');">
+  <div class="banner-content">
+    <h3>Want something different ?</h3>
+    <%= link_to "Let's see the result", cocktails_path, class:"btn btn-primary" %>
+  </div>
+</div>
+

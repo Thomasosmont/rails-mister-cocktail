@@ -1,5 +1,5 @@
 <%= link_to cocktail_path(cocktail), class: "card-link" do %>
-  <div class="card"><%= image_tag "http://lorempixel.com/360/175/nature/#{i}" %>
+  <div class="card"><%= render "photo", cocktail: cocktail %>
     <span class="card-category"><%= cocktail.name %></span>
   </div>
 <% end %>
