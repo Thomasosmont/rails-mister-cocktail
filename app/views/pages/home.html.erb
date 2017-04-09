@@ -1,9 +1,12 @@
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_url("bar.jpg")%>');">
+<div class="banner"><%= video_tag "Cocktails.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "banner video" %>
+  <div class="banner-logo">
+    <%= image_tag "logo_cocktail.png", id: "logo" %>
+    <p id="brand">I love cocktails</p>
+  </div>
+  <br>
   <div class="banner-content">
     <h1>Discover the web's best cocktails</h1>
     <p>Share your best cocktail recipe</p>
     <%= link_to "See all our cocktails", cocktails_path, class:"btn btn-primary" %>
   </div>
 </div>
-
-

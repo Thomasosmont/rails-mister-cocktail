@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .banner h1 {
   font-size: 50px;
@@ -32,3 +33,26 @@
   align-items: center;
   justify-content: center;
 }
+
+.banner-content {
+  position: absolute;
+}
+
+.banner-logo {
+  position: absolute;
+  top: 40px;
+  left: 90px;
+  display: flex;
+  #logo {
+    width: 90px;
+  } #brand {
+    font-family: 'Sacramento', cursive;
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
