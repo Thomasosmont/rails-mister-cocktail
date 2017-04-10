@@ -2,7 +2,7 @@
   <h1 class="text-center">All our cocktails</h1>
   <div class="container">
     <div class="row">
-      <% @cocktails.each_with_index do |cocktail| %>
+      <% @cocktails.each do |cocktail| %>
         <div class="col-xs-12 col-sm-4">
           <%= render "card", cocktail: cocktail %>
         </div>
