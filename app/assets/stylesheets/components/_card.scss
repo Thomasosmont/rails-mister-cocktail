@@ -1,12 +1,17 @@
 .card {
-  height: 250px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   color: white;
   position: relative;
   margin: 20px;
-  opacity: 0.9;
+  filter: brightness(80%);
+  transition: all 0.1s ease;
   &:hover {
-    opacity: 0.6;
+    transform: scale(1.1);
+  }
+  img {
+    border-radius: 10px;
+    width: 250px;
+    height: 194px;
   }
 }
 .card-user {
@@ -34,9 +39,18 @@
   }
 .card-link {
   width: 100%;
-  z-index:2;
+  z-index: 2;
   background: black;
 }
 .card-link:hover{
   opacity: 0.1;
+}
+
+.img-rounded {
+  border-radius: 10px;
+}
+
+.container {
+  padding-left: 36px;
+  margin-left: 22px;
 }
