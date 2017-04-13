@@ -1,12 +1,18 @@
-<div class="wrapper-grey">
-  <h1 class="text-center">Try, Discover, Enjoy, Try again</h1>
-  <div class="container">
-    <div class="row">
-      <% @cocktails.each do |cocktail| %>
-        <div class="col-xs-12 col-sm-6 col-lg-3">
-          <%= render "card", cocktail: cocktail %>
-        </div>
-      <% end %>
-    </div>
+<h1 class="text-center">Try, Discover, Enjoy, Try again</h1>
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <%= render "card", cocktail: cocktail %>
+      </div>
+    <% end %>
   </div>
 </div>
+<div class="container-btn text-center">
+  <%= link_to "Create a cocktail", new_cocktail_path, class: "btn-index" %>
+</div>
+
+
+
+
+

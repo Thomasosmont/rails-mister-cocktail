@@ -61,9 +61,7 @@
   border: 2px solid white;
 }
 .navbar-wagon-button:hover {
-  color: white;
-  background: #D23333;
-  border-color: #ac2626;
+  filter: brightness(85%);
 }
 
 /* Navbar search form */
