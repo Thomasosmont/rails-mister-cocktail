@@ -90,17 +90,16 @@
 }
 
 .btn-link {
-  border: 1px solid #FFF000;
   padding: 5px;
   border-radius: 8px;
   text-decoration: none;
   color: yellow;
   &:hover {
     text-decoration: none;
+    border: 1px solid #FFF000;
   }
   &:visited{
     text-decoration: none;
-    border: 1px solid #FFF000;
     color: yellow;
   }
   &:active{
