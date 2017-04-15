@@ -3,7 +3,6 @@
   color: white;
   position: relative;
   margin: 20px;
-  filter: brightness(80%);
   transition: all 0.1s ease;
   &:hover {
     transform: scale(1.1);
@@ -12,6 +11,7 @@
     border-radius: 10px;
     width: 250px;
     height: 194px;
+    filter: brightness(65%);
   }
 }
 .card-user {
