@@ -18,3 +18,10 @@
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
 //= require_tree .
+
+$(".btn-index-js").click(function(e){
+    event.preventDefault();
+    $(".link-index").toggleClass("hidden");
+});
+
+

@@ -1,5 +1,5 @@
 .category-cocktail {
-  border: 1px solid black;
+  border: 1px solid #e0e0e0;
   margin-top: 30px;
   background: #e0e0e0;
   border-radius: 5px;
@@ -17,7 +17,7 @@
 }
 
 .description-cocktail {
-  border: 1px solid black;
+  border: 1px solid #e0e0e0;
   margin-top: 30px;
   height: 365px;
   border-radius: 5px;
@@ -39,3 +39,85 @@
   bottom: 20px;
   right: 20px;
 }
+
+.link-index {
+  border: 1px solid black;
+  background: black;
+  padding-left: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 15px #FFF000;
+}
+
+.image-index {
+  width: 100px;
+}
+
+#row-2 {
+  margin-top: 20px;
+}
+
+
+.btn-index-js {
+  color: black;
+  background: $yellow;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease;
+  &:hover {
+    filter: brightness(90%);
+    text-decoration: none;
+    color: black;
+  }
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+  &:visited{
+    text-decoration: none;
+    color: black;
+  }
+  &:active{
+    text-decoration: none;
+  }
+  &:focus{
+    text-decoration: none;
+  }
+}
+
+.btn-link {
+  border: 1px solid #FFF000;
+  padding: 5px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: yellow;
+  &:hover {
+    text-decoration: none;
+  }
+  &:visited{
+    text-decoration: none;
+    border: 1px solid #FFF000;
+    color: yellow;
+  }
+  &:active{
+    text-decoration: none;
+  }
+  &:focus{
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
